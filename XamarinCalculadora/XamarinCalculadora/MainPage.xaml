@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinCalculadora.MainPage">
+
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="resultadoText" 
+               FontSize="48" 
+               FontAttributes="Bold" 
+               BackgroundColor="Black"
+               TextColor="White"
+               Text="0"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="Center"
+               LineBreakMode="NoWrap"
+               Grid.ColumnSpan="4"
+               Grid.Row="0"/>
+
+        <Button Text="7"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="1"
+                Grid.Column="0" 
+                Clicked="SelecionarNumero" />
+                
+
+        <Button Text="8"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="1"
+                Grid.Column="1" 
+                Clicked="SelecionarNumero" />
+                
+
+        <Button Text="9"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="1"
+                Grid.Column="2" 
+                Clicked="SelecionarNumero" />
+                
+
+        <Button Text="÷"
+                BackgroundColor="Orange"
+                TextColor="White"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="1"
+                Grid.Column="3" 
+                Clicked="SelecionarOperador" />
+
+        <Button Text="4"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="2"
+                Grid.Column="0" 
+                Clicked="SelecionarNumero" />
+
+
+        <Button Text="5"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="2"
+                Grid.Column="1" 
+                Clicked="SelecionarNumero" />
+
+
+        <Button Text="6"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="2"
+                Grid.Column="2" 
+                Clicked="SelecionarNumero" />
+
+
+        <Button Text="x"
+                BackgroundColor="Orange"
+                TextColor="White"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="2"
+                Grid.Column="3" 
+                Clicked="SelecionarOperador" />
+
+        <Button Text="1"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="3"
+                Grid.Column="0" 
+                Clicked="SelecionarNumero" />
+
+
+        <Button Text="2"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="3"
+                Grid.Column="1" 
+                Clicked="SelecionarNumero" />
+
+
+        <Button Text="3"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="3"
+                Grid.Column="2" 
+                Clicked="SelecionarNumero" />
+
+
+        <Button Text="-"
+                BackgroundColor="Orange"
+                TextColor="White"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="3"
+                Grid.Column="3" 
+                Clicked="SelecionarOperador" />
+
+        <Button Text="0"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="36"
+                BorderRadius="0"                
+                Grid.Row="4"                
+                Grid.ColumnSpan="3" 
+                Clicked="SelecionarNumero" />
+        
+        <Button Text="+"
+                BackgroundColor="Orange"
+                TextColor="White"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="4"
+                Grid.Column="3" 
+                Clicked="SelecionarOperador" />
+
+        <Button Text="C"
+                BackgroundColor="Gray"
+                TextColor="White"
+                FontSize="36"
+                BorderRadius="0"                
+                Grid.Row="5"                
+                Grid.Column="0" 
+                Clicked="Limpar"/>
+
+        <Button Text="="
+                BackgroundColor="Orange"
+                TextColor="White"
+                FontSize="36"
+                BorderRadius="0"
+                Grid.Row="5"
+                Grid.Column="1"
+                Grid.ColumnSpan="3" 
+                Clicked="CalcularOperacao" />
+
+    </Grid>
+
+</ContentPage>
